@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back, Lesedi ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #f8b6d2);
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 430px;
+            padding: 40px 25px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: beat 1s infinite;
+        }
+
+        h1 {
+            color: #e75480;
+            font-size: 32px;
+            margin: 15px 0;
+        }
+
+        p {
+            color: #555;
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            background: #e75480;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #d94370;
+        }
+
+        #message {
+            display: none;
+            margin-top: 25px;
+            color: #e75480;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+
+        .sparkles {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="heart">❤️</div>
+
+        <h1>Welcome Back, Lesedi!</h1>
+
+        <p>
+            Seddzzz Wifeyy 🥹❤️
+        </p>
+
+        <p>
+            I missed you so much!
+        </p>
+
+        <button onclick="showMessage()">
+            Click me 💌
+        </button>
+
+        <div id="message">
+            I'm so happy you're back, Lesedi! ❤️<br><br>
+
+            Your presence was definitely missed. 🥹🫶🏽<br><br>
+
+            Welcome back, Wifeyy! 😭❤️<br><br>
+
+            You are very special and loved more than you know. ❤️
+        </div>
+
+        <div class="sparkles">
+            ✨ 💕 ✨
+        </div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
